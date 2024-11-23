@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+
+<body>
+    <main>
+        <!-- Instruction Section -->
+        <div class="instruction-frame">
+            <h1>Student Enrollment Form</h1>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Fill in the form fields.</li>
+                <li>Check your interests.</li>
+                <li>Click "Enroll Now" to submit.</li>
+            </ol>
+        </div>
+
+        <!-- Form Section -->
+        <section id="form">
+            <form>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="First Name - M.I(optional) - Last Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="0" max="120" placeholder="18" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="sex" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="sex" value="female" required> Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course" name="course" required>
+                        <option value="bsit">BSIT</option>
+                        <option value="bssw">BSSW</option>
+                        <option value="bspa">BSPA</option>
+                        <option value="bsais">BSAIS</option>
+                        <option value="dhrs">DHRS</option>
+                        <option value="bse">BSE</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="webdev"> Web Development</label>
+                        <label><input type="checkbox" name="interests" value="datasci"> Data Science</label>
+                        <label><input type="checkbox" name="interests" value="networking"> Networking</label>
+                        <label><input type="checkbox" name="interests" value="graphdesign"> Graphic Design</label>
+                        <label><input type="checkbox" name="interests" value="ml"> Machine Learning</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enroll Now</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Enrolled Students Table -->
+        <section id="dataTable">
+            <h3 class="enrolled">Enrolled Students</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                        <th>Interests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jeremy Bryan Villanueva</td>
+                        <td>jeremybryanvillanueva@gmail.com</td>
+                        <td>19</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Web Development</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jeremy Tolentino</td>
+                        <td>jeremytolentino@gmail.com</td>
+                        <td>18</td>
+                        <td>Male</td>
+                        <td>BSIT</td>
+                        <td>Networking</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jeremiah Villanueva</td>
+                        <td>jeremiahvillanueva@gmail.com</td>
+                        <td>22</td>
+                        <td>Male</td>
+                        <td>BSPA</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Brianne Dador</td>
+                        <td>briannedador@gmail.com</td>
+                        <td>21</td>
+                        <td>Female</td>
+                        <td>BSE</td>
+                        <td>Graphic Design</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Dyna Dador</td>
+                        <td>dynadador@gmail.com</td>
+                        <td>20</td>
+                        <td>Female</td>
+                        <td>BSE</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
